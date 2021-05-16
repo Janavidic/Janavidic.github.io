@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Affino kriptiranje </title>
+    <link rel="stylesheet" type="text/css" href="kriptiranje.css">
+</head>
+
+<body>
+    <h1> Affino kriptiranje </h1>
+
+    <p> Affino kriptiranje jedan je od najpoznatijin načina pretvaranja nekog teksta u "tajnu poruku", tj. kriptiranja.
+        <br> Ono se temelji na matematici i funkciji y= (ax+b)%26.
+    </p>
+
+    <p>Affino sifra je jedan od dijelova <a href=kriptografija.html>kriptografije</a>
+    </p>
+
+    <img src="https://cdn.technologyreview.com/i/images/quantumexplainer3.2-01.jpg?sw=1272&cx=0&cy=0&cw=2999&ch=1687" heitht="400" width="400"> </img>
+    <h3> Princip </h3>
+    <p> Uzmimo na primjer da želimo napisati tajnu poruku i nekome napisati riječ "KARANTENA" na način da <br> ju nitko neće moći pročitati osim te osobe kojoj ćemo otkriti kako tu riječ dekriptirati </p>
+    <p> Za kriptiranje trebamo 2 broja: a i b. Neka je a npr. 3, a b je 4. Potrebno je gledati u tablicu <br> da bismo mogli kriptirati riječ </p>
+
+    <table border="1" bordercolor="pink" bgcolor="CornflowerBlue">
+        <tr>
+            <th colspan="26" bgcolor="pink"> Slovo i njegova pripadajuća vrijednost </th>
+        </tr>
+        <tr>
+            <td> A </td>
+            <td> B </td>
+            <td> C </td>
+            <td> D </td>
+            <td> E </td>
+            <td> F </td>
+            <td> G </td>
+            <td> H </td>
+            <td> I </td>
+            <td> J </td>
+            <td> K </td>
+            <td> L </td>
+            <td> M </td>
+            <td> N </td>
+            <td> O </td>
+            <td> P </td>
+            <td> Q </td>
+            <td> R </td>
+            <td> S </td>
+            <td> T </td>
+            <td> U </td>
+            <td> V </td>
+            <td> W </td>
+            <td> X </td>
+            <td> Y </td>
+            <td> Z </td>
+
+        </tr>
+        <tr>
+            <td> 0 </td>
+            <td> 1 </td>
+            <td> 2 </td>
+            <td> 3 </td>
+            <td> 4 </td>
+            <td> 5 </td>
+            <td> 6 </td>
+            <td> 7 </td>
+            <td> 8 </td>
+            <td> 9 </td>
+            <td> 10 </td>
+            <td> 11 </td>
+            <td> 12 </td>
+            <td> 13 </td>
+            <td> 14 </td>
+            <td> 15 </td>
+            <td> 16 </td>
+            <td> 17 </td>
+            <td> 18 </td>
+            <td> 19 </td>
+            <td> 20 </td>
+            <td> 21 </td>
+            <td> 22 </td>
+            <td> 23 </td>
+            <td> 24 </td>
+            <td> 25 </td>
+        </tr>
+    </table>
+
+    <h3 style="text-align=left"> Postupak </h3>
+    <ol>
+        <li> Treba podijeliti riječ na slova </li>
+        <li> Ako je u riječi "KARANTENA" slovu "K" pripadajući broj 10 (vidi se iz tablice) onda u formuli <br> y= (ax+b)%26 na mjesto x uvrstimo 10, na mjesto a broj koji smo prije odredili (3), a na mjesto b 4. </li>
+        <li> Za slovo "K" dobit ćemo 34%26 te onda treba provjeriti koliko ostane kada se 34 dijeli sa 26, <br> ostane 8 i taj broj odgovara slovu "I" </li>
+        <li> Kada se to napravi za svako slovo dobije se kriptirana riječ "IEDERJQRE" </li>
+    </ol>
+
+    <h3> Dodatni sadržaji </h3>
+    <p> Više sadržaja se nalazi na sljedećoj poveznici: </p>
+    <a href="https://en.wikipedia.org/wiki/Affine_cipher"> Dodatni sadržaji </a>
+
+</body>
+
+</html>
